@@ -1,0 +1,182 @@
+/* Reset and Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(
+    to right,
+    #4a148c,
+    #880e4f
+  ); /* Same gradient as footer */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: white;
+  animation: fadeInDown 1s ease-out;
+}
+
+/* Sections */
+section {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple gradient */
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for sections */
+section:hover {
+  transform: translateY(-5px); /* Lift the section on hover */
+  filter: brightness(1.1); /* Brighten the section on hover */
+}
+
+section h2 {
+  color: #fff; /* White text for section headers */
+  margin-bottom: 10px;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  color: #fff; /* White text for paragraphs and list items */
+}
+
+/* Images */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container figure {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Button */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .back-button {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer .back-button:hover {
+  background-color: #ab47bc;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #4a148c, #880e4f);
+  color: white;
+  margin-top: 50px;
+  border-radius: 16px 16px 0 0;
+}
+
+footer .back-button {
+  background-color: #ffffff;
+  color: #4a148c;
+  border: none;
+  padding: 12px 25px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+footer .back-button:hover {
+  background-color: #f3e5f5;
+  transform: scale(1.05);
+}
+
+.footer-container {
+  margin-top: 20px;
+}
+
+.footer-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 15px 0;
+}
+
+.footer-icons a {
+  font-size: 1.8rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+  color: #f8bbd0;
+}
+
+.footer-copy {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #ffe4ec;
+}
